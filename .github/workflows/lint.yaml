@@ -17,6 +17,7 @@ jobs:
         file_or_dir: "."
         config_file: "./.github/yamllint.yaml"
     - name: Lint Ansible
+      uses: robertdebock/galaxy-action@1.1.0
       with:
         targets: "./"
         args: "-c ./.github/.ansible-lint"
