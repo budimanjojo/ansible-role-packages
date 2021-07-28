@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: packages
   author: Budiman JOJO
   description: Role to install and remove packages
   issue_tracker_url: http://github.com.com/budimanjojo/ansible-role-packages/issues
