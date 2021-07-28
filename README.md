@@ -72,7 +72,7 @@ Here is an example playbook:
       - python36-neovim
 
   roles:
-  - packages
+  - budimanjojo.packages
 ```
 
 License
