@@ -6,6 +6,7 @@ Role to install and remove packages.
 Supported OS Families
 ---------------------
 
+- Ubuntu (tested)
 - Arch Linux (tested)
 - Redhat (untested)
 - Other Linux distributions supported by 'package' module should work just fine
