@@ -3,3 +3,4 @@
   community.general.pacman:
     name: "{{ packages_install.archlinux }}"
     state: present
+  when: packages_install.archlinux is defined

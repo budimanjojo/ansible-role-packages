@@ -3,3 +3,4 @@
   apt:
     name: "{{ packages_uninstall.debian }}"
     state: absent
+  when: packages_uninstall.debian is defined

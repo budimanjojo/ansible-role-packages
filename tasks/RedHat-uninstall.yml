@@ -3,3 +3,4 @@
   dnf:
     name: "{{ packages_uninstall.redhat }}"
     state: absent
+  when: packages_uninstall.redhat is defined

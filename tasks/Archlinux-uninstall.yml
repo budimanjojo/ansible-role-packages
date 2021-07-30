@@ -3,3 +3,4 @@
   community.general.pacman:
     name: "{{ packages_uninstall.archlinux }}"
     state: absent
+  when: packages_uninstall.archlinux is defined

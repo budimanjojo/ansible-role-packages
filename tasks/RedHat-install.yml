@@ -3,3 +3,4 @@
   dnf:
     name: "{{ packages_install.redhat }}"
     state: present
+  when: packages_install.redhat is defined

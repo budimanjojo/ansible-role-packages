@@ -3,3 +3,4 @@
   apt:
     name: "{{ packages_install.debian }}"
     state: present
+  when: packages_install.debian is defined
