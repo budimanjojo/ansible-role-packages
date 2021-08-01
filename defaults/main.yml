@@ -2,7 +2,7 @@
 packages_pacman_update_mirrorlist: no
 ## Required when packages_pacman_update_mirrorlist == yes
 packages_pacman_mirrorlist_url: ""
-packages_update_cache: yes
+packages_update_cache: no
 packages_install:
   all: []
   debian: []

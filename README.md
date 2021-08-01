@@ -18,7 +18,7 @@ Available variables are listed below, the default values are in [defaults/main.y
 ```
 packages_pacman_update_mirrorlist: whether to update pacman mirrorlist (requires to define packages_pacman_mirrorlist_url), default to no (bool)
 packages_pacman_mirrorlst_url: link to get the mirrorlist file, default to nothing (string)
-packages_update_cache: whether to update package manager cache, default to yes (bool)
+packages_update_cache: whether to update package manager cache, default to no (bool)
 
 ## Dict of packages to install based on OS
 packages_install:
@@ -50,7 +50,7 @@ Here is an example playbook:
   vars:
     packages_pacman_update_mirrorlist: yes
     packages_pacman_mirrorlist_url: https://archlinux.org/mirrorlist/?country=UA&country=GB&country=US&protocol=http&protocol=https&ip_version=4
-    packages_update_cache: no
+    packages_update_cache: yes
     packages_install:
       all:
       - neovim
