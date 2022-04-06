@@ -1,6 +1,6 @@
 ---
 - name: Setup pacman mirrorlist
-  replace:
+  ansible.builtin.replace:
     path: /etc/pacman.d/mirrorlist
     regexp: ^#Server
     replace: Server

@@ -1,6 +1,6 @@
 ---
 - name: Get newest pacman mirrorlist
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ packages_pacman_mirrorlist_url }}"
     dest: /etc/pacman.d/mirrorlist
     mode: 0644
@@ -14,7 +14,7 @@
   - Update pacman cache
 
 - name: Flush handlers
-  meta: flush_handlers
+  ansible.builtin.meta: flush_handlers
 
 - name: Update pacman cache
   community.general.pacman:

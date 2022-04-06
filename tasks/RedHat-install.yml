@@ -1,6 +1,6 @@
 ---
 - name: Install Redhat specific packages
-  dnf:
+  ansible.builtin.dnf:
     name: "{{ packages_install.redhat }}"
     state: present
   when: packages_install.redhat is defined

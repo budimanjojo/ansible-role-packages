@@ -3,7 +3,7 @@
   include_tasks: "{{ ansible_os_family }}-pre.yml"
 
 - name: Install packages
-  package:
+  ansible.builtin.package:
     name: "{{ packages_install.all }}"
     state: present
   when: packages_install.all is defined
@@ -12,7 +12,7 @@
   include_tasks: "{{ ansible_os_family }}-install.yml"
 
 - name: Remove packages
-  package:
+  ansible.builtin.package:
     name: "{{ packages_uninstall.all }}"
     state: absent
   when: packages_uninstall.all is defined

@@ -1,6 +1,6 @@
 ---
 - name: Remove Debian specific packages
-  apt:
+  ansible.builtin.apt:
     name: "{{ packages_uninstall.debian }}"
     state: absent
   when: packages_uninstall.debian is defined
